@@ -1,11 +1,11 @@
 #!/bin/bash
-[ -z "$FruitShareCodes" ] && {
+[ -n "$FruitShareCodes" ] && {
   FRUITSHARECODES="$FruitShareCodes"
 }
-[ -z "$PetShareCodes" ] && {
-  PETSHARECODES="$PETSHARECODES"
+[ -n "$PetShareCodes" ] && {
+  PETSHARECODES="$PetShareCodes"
 }
-[ -z "$SuperMarketShareCodes" ] && {
+[ -n "$SuperMarketShareCodes" ] && {
   SUPERMARKET_SHARECODES="$SuperMarketShareCodes"
 }
 [ "$FRUITSHARECODES" == "" ] && {
