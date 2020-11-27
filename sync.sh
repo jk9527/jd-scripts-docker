@@ -5,7 +5,7 @@ git clone --depth=1 https://github.com/jk9527/jd-scripts-docker.git /jd-scripts-
   rm -rf /jd-scripts-docker
   mv /jd-scripts-docker_tmp /jd-scripts-docker
 }
-git clone --depth=1 https://github.com/lxk0301/jd_scripts.git /scripts_tmp
+git clone -b master --depth=1 https://github.com/lxk0301/jd_scripts.git /scripts_tmp
 [ -d /scripts_tmp ] && {
   rm -rf /scripts
   mv /scripts_tmp /scripts
