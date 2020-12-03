@@ -25,3 +25,4 @@
 18 16 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node /scripts/jd_small_home.js | sed 's/^/ 【东东小窝】/'; "
 36 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node /scripts/jd_jdfactory.js | sed 's/^/ 【东东工厂】/'; "
 36 0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node /scripts/jd_syj.js | sed 's/^/ 【十元街】/'; "
+10 23 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node /scripts/jd_jxstory.js | sed 's/^/ 【京喜故事】/'; "
