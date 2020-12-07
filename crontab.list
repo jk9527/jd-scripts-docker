@@ -28,4 +28,3 @@
 10 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node /scripts/jd_jxstory.js | sed 's/^/ 【京喜故事】/'; "
 17 0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node /scripts/jd_ms_redrain.js | sed 's/^/ 【秒杀红包雨】/'; "
 17 23 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node /scripts/ jd_bean_home.js | sed 's/^/ 【领京豆额外奖励】/'; "
-#17 23 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node /scripts/jd_split.js | sed 's/^/ 【金榜年终奖】/'; " 
