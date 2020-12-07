@@ -31,3 +31,4 @@
 12 23 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node /scripts/jd_car.js | sed 's/^/ 【京东汽车】/'; "
 16 16 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node /scripts/jd_health.js | sed 's/^/ 【健康抽奖机】/'; "
 17 16 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node /scripts/jd_split.js | sed 's/^/ 【金榜年终奖】/'; "
+17 18 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node /scripts/jd_kd.js | sed 's/^/ 【京东快递签到】/'; "
