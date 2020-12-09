@@ -34,3 +34,5 @@
 17 18 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_kd.js | sed 's/^/ 【京东快递签到】/'; "
 10 16 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_digital_floor.js | sed 's/^/ 【京东数码加购】/'; "
 0 16,1,3,7,9,11,12,13,15 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_live_redrain.js | sed 's/^/ 【直播红包雨】/'; "
+10 16 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_apple_live.js | sed 's/^/ 【苹果抽奖机】/'; "
+30 12-15/1 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_live_redrain2.js | sed 's/^/ 【超级直播红包雨】/'; "
