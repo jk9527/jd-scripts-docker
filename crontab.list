@@ -36,3 +36,4 @@
 0 16,1,3,7,9,11,12,13,15 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_live_redrain.js | sed 's/^/ 【直播红包雨】/'; "
 10 16 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_apple_live.js | sed 's/^/ 【苹果抽奖机】/'; "
 10 16 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_pubg.js | sed 's/^/ 【PUBG】/'; "
+10-20/5 4 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_live.js | sed 's/^/ 【京东直播】/'; "
