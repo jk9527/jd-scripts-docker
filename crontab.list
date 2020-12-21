@@ -24,7 +24,7 @@
 20 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_dreamFactory.js | sed 's/^/ 【京喜工厂】/'; "
 18 16 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_small_home.js | sed 's/^/ 【东东小窝】/'; "
 36 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_jdfactory.js | sed 's/^/ 【东东工厂】/'; "
-36 0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_syj.js | sed 's/^/ 【十元街】/'; "
+36 0,10 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_syj.js | sed 's/^/ 【十元街】/'; "
 17 0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_ms_redrain.js | sed 's/^/ 【秒杀红包雨】/'; "
 17 23 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_bean_home.js | sed 's/^/ 【领京豆额外奖励】/'; "
 12 16 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_car.js | sed 's/^/ 【京东汽车】/'; "
