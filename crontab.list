@@ -37,6 +37,7 @@
 0 1,4,10 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_jxnc.js | sed 's/^/ 【京喜农场】/'; "
 39 23,0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_cash.js | sed 's/^/ 【签到领现金】/'; "
 27 23 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jx_sign.js | sed 's/^/ 【京喜app签到】/'; "
+1 16,0,4,8 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_family.js | sed 's/^/ 【京东家庭号】/'; "
 
 ##############短期活动##############
 #年货节(活动时间：2021年1月9日-2021年2月9日)
