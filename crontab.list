@@ -1,7 +1,7 @@
 ##############长期活动##############
 50 */1 * * * bash /sync 1>/proc/1/fd/1 2>/proc/1/fd/2
 40 */3 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_moneyTree.js | sed 's/^/ 【京东摇钱树】/'; "
-11 17 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_lotteryMachine.js | sed 's/^/ 【京东抽奖机】/'; "
+11 17,0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_lotteryMachine.js | sed 's/^/ 【京东抽奖机】/'; "
 0 16 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_shop.js | sed 's/^/ 【进店领豆脚本】/'; "
 0 0,4,8,16 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_joy_reward.js | sed 's/^/ 【宠汪汪积分兑换京豆】/'; "
 0 2 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_bean_change.js | sed 's/^/ 【京豆变动通知】/'; "
