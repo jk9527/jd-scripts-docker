@@ -12,6 +12,7 @@ fi
 
 
 if [ -d /scripts ];then
+	git -C /scripts reset --hard
 	git -C /scripts pull
 else
 	git clone -b my_master --depth=1 https://gitee.com/jk9527/jd_scripts.git /scripts_tmp
