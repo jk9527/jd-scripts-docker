@@ -1,7 +1,7 @@
 #!/bin/bash
 trap 'cp /jd-scripts-docker/sync.sh /sync' Exit
 if [ -d /jd-scripts-docker ];then
-	git -C /jd-scripts-docker pull
+	git -C /jd-scripts-docker pull --rebase
 else
 	git clone --depth=1 https://github.com/jk9527/jd-scripts-docker.git /jd-scripts-docker_tmp
 	[ -d /jd-scripts-docker_tmp ] && {
@@ -13,7 +13,7 @@ fi
 
 if [ -d /scripts ];then
 	git -C /scripts reset --hard
-	git -C /scripts pull
+	git -C /scripts pull --rebase
 else
 	git clone -b my_master --depth=1 https://gitee.com/jk9527/jd_scripts.git /scripts_tmp
 	[ -d /scripts_tmp ] && {
