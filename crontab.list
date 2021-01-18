@@ -42,3 +42,4 @@
 ##############短期活动##############
 #年货节(活动时间：2021年1月9日-2021年2月9日)
 10 0,2 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_nh.js | sed 's/^/ 【年货节】/'; "
+*/20 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_nianCollect.js | sed 's/^/ 【炸年兽】/'; "
