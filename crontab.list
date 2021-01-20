@@ -44,4 +44,5 @@
 10 0,2 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_nh.js | sed 's/^/ 【年货节】/'; "
 30 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_nianCollect.js | sed 's/^/ 【炸年兽收爆竹】/'; "
 1 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_nian.js | sed 's/^/ 【炸年兽】/'; "
-
+#京东神仙书院(活动时间:2021-1-20至2021-2-5)
+30 22,9 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_immortal.js | sed 's/^/ 【神仙书院】/'; "
