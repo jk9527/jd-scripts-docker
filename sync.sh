@@ -22,6 +22,16 @@ else
   }
 fi
 
+if [ -d /Loon ];then
+	git -C /Loon reset --hard
+	git -C /Loon pull --rebase
+else
+	git clone -b my_master --depth=1 https://gitee.com/jk9527/Loon.git /Loon_tmp
+	[ -d /Loon_tmp ] && {
+		  rm -rf /Loon
+	  mv /Loon_tmp /Loon
+  }
+fi
 
 cd /scripts || exit 1
 
