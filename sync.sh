@@ -1,14 +1,14 @@
 #!/bin/bash
 trap 'cp /jd-scripts-docker/sync.sh /sync' Exit
-if [ -d /jd-scripts-docker ];then
-	git -C /jd-scripts-docker pull --rebase
-else
-	git clone --depth=1 https://github.com/jk9527/jd-scripts-docker.git /jd-scripts-docker_tmp
+#if [ -d /jd-scripts-docker ];then
+#	git -C /jd-scripts-docker pull --rebase
+#else
+	git clone --depth=1 https://gitee.com/jk9527/jd-scripts-docker.git /jd-scripts-docker_tmp
 	[ -d /jd-scripts-docker_tmp ] && {
 		  rm -rf /jd-scripts-docker
 	  mv /jd-scripts-docker_tmp /jd-scripts-docker
   }
-fi
+#fi
 
 
 if [ -d /scripts ];then
