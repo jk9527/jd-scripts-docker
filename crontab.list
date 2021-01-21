@@ -45,8 +45,8 @@
 30 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_nianCollect.js | sed 's/^/ 【炸年兽收爆竹】/'; "
 1 * * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_nian.js | sed 's/^/ 【炸年兽】/'; "
 30 0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_nian_sign.js | sed 's/^/ 【炸年兽签到】/'; "
-0 1,10 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_nian_ar.js | sed 's/^/ 【京东炸年兽AR】/'; "
-40 0,10 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_nian_wechat.js | sed 's/^/ 【京东炸年兽小程序】/'; "
+40 16,17,0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_nian_ar.js | sed 's/^/ 【京东炸年兽AR】/'; "
+40 16,17,0 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_nian_wechat.js | sed 's/^/ 【京东炸年兽小程序】/'; "
 #京东神仙书院(活动时间:2021-1-20至2021-2-5)
 30 22,9 * * * bash -c " exec 1<>/proc/1/fd/1; exec 2<>/proc/1/fd/2; set -o allexport; source /all; source /env; cd /scripts; node --expose-gc /scripts/jd_immortal.js | sed 's/^/ 【神仙书院】/'; "
 #集鞭炮赢京豆(活动时间：2021年1月20日-2021年1月27日)
